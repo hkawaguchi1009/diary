@@ -7,25 +7,33 @@
 </head>
 <body>
     <!-- Note NO FORM!! -->
-    <h1>FUTURE BOTTLE</h1>
-    <h1>Create one</h1>
-    <p>Make your own bottle and send it to your exciting future!</p>
+    <div id = "entire">
+    <div id = "barDiv">
+    <h1 id = "bar">FUTURE BOTTLE</h1>
+    </div>
+    
+    <h1 id = "header">Create one</h1>
+    <p id = "explain">Make your own bottle and send it to your exciting future!</p>
     
     <div id = "dateDiv">
-    <p>Date: <input type="date" id="date"></p>
+    <p>Date: <input type="date" id="date" class = "input"></p>
     <span id="dateErr" class="hiddenErr">Why don't you pay attention to the date?</span>
     </div>
     
     <div id= "titleDiv">
-    <p>Title: <input type = "text" id = "title" placeholder = "New friends"></p> 
+    <p>Title: <input type = "text" id = "title" class = "input" placeholder = "New friends"></p> 
     <span id="titleErr" class="hiddenErr">Type in something whatever pop up in your mind!</span>
     </div>
     
     <div id = "contentsDiv">
-    <p><textarea id = "contents">Type whatever you want to tell, how was your day, etc.</textarea></p>
+    <p><textarea id = "contents" class = "input" rows = "20" cols = "70">Type whatever you want to tell, how was your day, etc.</textarea></p>
     <span id="contentsErr" class="hiddenErr">Do you really know what this app for?</span>
     </div>
     
-    <button id="send">Send</button>
+    <div id = "button">
+    <input type = "submit" id="send" value = "Send">
+    </div>
+    </div>
+    
 </body>
 </html>
