@@ -7,9 +7,7 @@ Inputs are going to be date, text input, and also images. (Skip images for this 
 
 /*
 To do;
-Show error message if there is no input
-Adjust CSS like a picture I submitted.
-Adjust GET and POST method to exchange the diary
+Adding the post into 
 Check how many diaries are stored
 If the diaries are more than 14, start to show one of them which is randomly chosen
 Adjust the result page because it might be super agly
@@ -35,26 +33,10 @@ function validate(event){
     }
 }
 
-function result(){
-    var result = "";
-    result += response.status;
-    var entire = document.getElementById("entire");
-    entire = result;
-}
 
 window.onload = function(){
     var widget = document.getElementById("formWidget");
     widget.addEventListener("submit",validate);
+    widget.addEventLister("submit",getPast);
     
-    var xhr = new XMLHttpRequest(); 
-    xhr.onload = function(){
-        var response = xhr.response;
-        }
-
-    xhr.open("POST", "http:\\mcs.drury.edu/ssigman/process.php");
-
-    xhr.responseType = 'json';
-    
-    xhr.send(widget);
 };
-
