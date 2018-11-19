@@ -6,10 +6,11 @@
     <script src="js/index.js"></script>
 </head>
 <body>
-    <form action = "" method = "post">
+    /*action = "http:\\mcs.drury.edu/ssigman/process.php" method = "POST"*/
+    <form id = "formWidget">
     <div id = "entire">
     <div id = "barDiv">
-    <h1 id = "bar">&nbspFUTURE BOTTLE</h1>
+    <h1 id = "bar">&nbsp FUTURE BOTTLE</h1>
     </div>
     
     <h1 id = "header">Create one</h1>
@@ -17,17 +18,14 @@
     
     <div id = "dateDiv">
     <p>Date: <input type="date" id="date" class = "input"></p>
-    <span id="dateErr" class="hiddenErr">Why don't you pay attention to the date?</span>
     </div>
     
     <div id= "titleDiv">
     <p>Title: <input type = "text" id = "title" class = "input" placeholder = "New friends"></p> 
-    <span id="titleErr" class="hiddenErr">Type in something whatever pop up in your mind!</span>
     </div>
     
     <div id = "contentsDiv">
-    <p><textarea id = "contents" class = "input" rows = "20" cols = "70">Type whatever you want to tell, how was your day, etc.</textarea></p>
-    <span id="contentsErr" class="hiddenErr">Do you really know what this app for?</span>
+        <textarea id = "contents" class = "input" rows = "20" cols = "70" placeholder="Type whatever you want to tell, how was your day, etc"></textarea>
     </div>
     
     <!-- Note NO FORM!! -->    
