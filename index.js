@@ -17,22 +17,26 @@ Adjust the color, span, and text messages.
 */
 
 
-var date = document.getElementById("date");
-var title = document.getElementById("title");
-var contents = document.getElementById("contents");
-                
-/*document.getElementById("send").addEventListener('click', function() {
-    if (date.value == null){
-        document.getElementById("dateErr").style.visibility = "visible"
+function validate(event){
+    var date = document.getElementById("date");
+    var title = document.getElementById("title");
+    var contents = document.getElementById("contents");
+    if (date.value == ""){
+        date.style.backgroundColor = "Orange";
         event.preventDefault();
     }
-    if (title.value.length<0){
-        document.getElementById("titleErr").style.visibility = "visible"
+    if (title.value.length<=0){
+        title.style.backgroundColor = "Orange";
         event.preventDefault();
     }
-    if (contents.value.length<0){
-        document.getElementById("contentsErr").style.visiblity = "visible"
+    if (contents.value.length<=0){
+        contents.style.backgroundColor = "Orange";
         event.preventDefault();
     }
-})
-*/
+}
+
+window.onload = function(){
+var widget = document.getElementById("formWidget");
+widget.addEventListener("submit",validate);
+};
+
