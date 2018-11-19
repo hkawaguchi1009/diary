@@ -38,26 +38,18 @@ p{
 
 #titleDiv{
     position: relative;
-    top: -50px;
+    top: -18px;
     left: 20px;
 }
 
 #contentsDiv{
     position: relative;
-    top: -80px;
+    top: -18px;
     left: 20px;
 }
 
 #button{
     position: relative;
     left: 250px;
-    top: -90px;
-}
-
-.hiddenErr {
-    visibility: hidden;
-    color: red;
-}
-span.hiddenErr {
-    display: block;
+    top: px;
 }
