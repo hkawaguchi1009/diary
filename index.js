@@ -35,8 +35,26 @@ function validate(event){
     }
 }
 
+function result(){
+    var result = "";
+    result += response.status;
+    var entire = document.getElementById("entire");
+    entire = result;
+}
+
 window.onload = function(){
-var widget = document.getElementById("formWidget");
-widget.addEventListener("submit",validate);
+    var widget = document.getElementById("formWidget");
+    widget.addEventListener("submit",validate);
+    
+    var xhr = new XMLHttpRequest(); 
+    xhr.onload = function(){
+        var response = xhr.response;
+        }
+
+    xhr.open("POST", "http:\\mcs.drury.edu/ssigman/process.php");
+
+    xhr.responseType = 'json';
+    
+    xhr.send(widget);
 };
 
