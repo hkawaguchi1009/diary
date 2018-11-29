@@ -1,0 +1,58 @@
+p{
+    font-family: "Robot Regular", "Helvetica";
+    color: #C6C79A;
+}
+#bar{
+    font-family: "Arial";
+    color: #B36D2E;
+}
+
+#barDiv{
+    background-color: #B3D3EB;
+    position: relative;
+    top: 10px;
+}
+
+#entire{
+    background-color: #00768A;
+}
+
+#header{
+    color: lightgoldenrodyellow;
+    font-family: "Helvetica";
+    position:relative;
+    left: 20px;
+}
+
+#explain{
+    position: relative;
+    top: -17px;
+    left: 20px;
+}
+
+#dateDiv{
+    float: both;
+    position: relative;
+    top: -18px;
+    left: 20px;
+}
+
+#titleDiv{
+    float: both;
+    position: relative;
+    top: -18px;
+    left: 20px;
+}
+
+#contentsDiv{
+    float: both;
+    position: relative;
+    top: -18px;
+    left: 20px;
+}
+
+#button{
+    position: relative;
+    left: 250px;
+    top: -18px;
+}
