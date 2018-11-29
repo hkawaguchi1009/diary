@@ -31,21 +31,18 @@ p{
 }
 
 #dateDiv{
-    float: both;
     position: relative;
     top: -18px;
     left: 20px;
 }
 
 #titleDiv{
-    float: both;
     position: relative;
     top: -18px;
     left: 20px;
 }
 
 #contentsDiv{
-    float: both;
     position: relative;
     top: -18px;
     left: 20px;
@@ -56,3 +53,5 @@ p{
     left: 250px;
     top: -18px;
 }
+
+
