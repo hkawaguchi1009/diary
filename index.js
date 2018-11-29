@@ -7,18 +7,22 @@ Inputs are going to be date, text input, and also images. (Skip images for this 
 
 /*
 To do;
-Adding the post into 
-Check how many diaries are stored
-If the diaries are more than 14, start to show one of them which is randomly chosen
-Adjust the result page because it might be super agly
-Adjust the color, span, and text messages.
+Use responsive design.
+Layout the design of you pages using the Bootstrap grid system to provide for layout on a desktop unit >= 992 p,  768 px <= tablet < 992 px, and phones < 768.
+Must use at least 1 bootstrap UI component. (See https://getbootstrap.com/docs/4.1/components/alerts/) for examples.)
+Navigate between each page. (Easiest way is to use Bootstrap.)
+Use jQuery to validate your data.
+Post your data to http://mcs.drury.edu so that you can verify your data input form works.
+Use jQuery to hard code your initial example data on summary pages.
+When finished merge milestone 4 into the development branch of your repo. Do not delete the Milestone 4 branch.
+Merge the development branch into your master branch.  Do not delete the development branch.
 */
 
 
 function validate(event){
-    var date = document.getElementById("date");
-    var title = document.getElementById("title");
-    var contents = document.getElementById("contents");
+    var date = $("#date");
+    var title = $("#title");
+    var contents = $("#contents");
     if (date.value == ""){
         date.style.backgroundColor = "Orange";
         event.preventDefault();
@@ -37,6 +41,4 @@ function validate(event){
 window.onload = function(){
     var widget = document.getElementById("formWidget");
     widget.addEventListener("submit",validate);
-    widget.addEventLister("submit",getPast);
-    
 };
