@@ -2,46 +2,36 @@ p{
     font-family: "Robot Regular", "Helvetica";
     color: #C6C79A;
 }
+
+#container{
+    background-color: #00768A;
+}
+
 #bar{
     font-family: "Arial";
     color: #B36D2E;
 }
 
+
+
 #barDiv{
     background-color: #B3D3EB;
     position: relative;
     top: 10px;
-}
-
-#entire{
-    background-color: #00768A;
+    left: 1%;
 }
 
 #header{
     color: lightgoldenrodyellow;
     font-family: "Helvetica";
     position:relative;
-    left: 3%;
+    left: 2%;
 }
 
 #explain{
     position: relative;
-    top: -17px;
-    left: 3%;
-}
-
-#container{
-    display: flex;
-    flex-direction : row;
-    nav {
-    flex: 0 1 20%;
-}
-    #main {
-    flex: 0 1 60%;
-}
-    aside {
-    flex: 0 1 20%;
-}
+    top: px;
+    left: 2%;
 }
 
 #dateDiv{
@@ -64,7 +54,6 @@ p{
 
 #button{
     position: relative;
-    top: -15px;
     left: 50%;
 }
 
