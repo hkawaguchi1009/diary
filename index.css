@@ -21,37 +21,51 @@ p{
     color: lightgoldenrodyellow;
     font-family: "Helvetica";
     position:relative;
-    left: 20px;
+    left: 3%;
 }
 
 #explain{
     position: relative;
     top: -17px;
-    left: 20px;
+    left: 3%;
+}
+
+#container{
+    display: flex;
+    flex-direction : row;
+    nav {
+    flex: 0 1 20%;
+}
+    #main {
+    flex: 0 1 60%;
+}
+    aside {
+    flex: 0 1 20%;
+}
 }
 
 #dateDiv{
     position: relative;
-    top: -18px;
-    left: 20px;
+    top: -4%;
+    left: 3%;
 }
 
 #titleDiv{
     position: relative;
-    top: -18px;
-    left: 20px;
+    top: -4%;
+    left: 3%;
 }
 
 #contentsDiv{
     position: relative;
-    top: -18px;
-    left: 20px;
+    top: -4%;
+    left: 3%;
 }
 
 #button{
     position: relative;
-    left: 250px;
-    top: -18px;
+    top: -15px;
+    left: 50%;
 }
 
 
