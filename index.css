@@ -5,6 +5,7 @@ p{
 
 #container{
     background-color: #00768A;
+    height: 1200px;
 }
 
 #bar{
@@ -46,10 +47,13 @@ p{
     left: 3%;
 }
 
-#contentsDiv{
+textarea{
     position: relative;
     top: -4%;
     left: 3%;
+    width: 96%;
+    height: 350px;
+    resize: none;
 }
 
 #button{
