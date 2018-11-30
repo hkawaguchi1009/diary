@@ -18,11 +18,22 @@ When finished merge milestone 4 into the development branch of your repo. Do not
 Merge the development branch into your master branch.  Do not delete the development branch.
 */
 
+/*$(document).ready(function() {
+    $("#myModal .btn-default").click(function() {
+       $("#noAlert").show();
+    });
+});
 
+$(document).ready(function() {
+    $("#myModal .btn-primary").click(function() {
+       $("#yesAlert").show();
+    });
+});
+*/
 function validate(event){
-    var date = $("#date");
-    var title = $("#title");
-    var contents = $("#contents");
+    var date = document.getElementById("date");
+    var title = document.getElementById("title");
+    var contents = document.getElementById("contents");
     if (date.value == ""){
         date.style.backgroundColor = "Orange";
         event.preventDefault();
@@ -37,8 +48,45 @@ function validate(event){
     }
 }
 
+function getAjax(success){
+    var xhr = new XMLHttpRequest();
+    xhr.open("GET","http://mcs.drury.edu");
+    xhr.onreadystatechange = function() {
+        if (xhr.readyState>3 && xhr.status==200) success(xhr.responseText);
+    };
+    xhr.setRequestHeader('X-Requested-With', 'XMLHttpRequest');
+    xhr.responseType = 'json';
+    xhr.send();
+}
+
+function getData(response){
+    var response = response;
+    var date = response.date
+    var title = response.title;
+    var contents = response.contents;
+    var page2 = "";
+    page2 += date;
+    page2 += title;
+    page2 += contents;
+    document.getElementById("page1") = page2.innerHTML;
+}
 
 window.onload = function(){
     var widget = document.getElementById("formWidget");
-    widget.addEventListener("submit",validate);
+    var send = document.getElementById("send");
+    send.addEventListener("click",validate);
+    
+    var xhr = new XMLHttpRequest(); 
+    
+    xhr.onload = function(){
+        
+        var response = xhr.response;
+ 
+    xhr.open("POST", "http://mcs.drury.edu");
+    xhr.responseType = 'json';
+    xhr.send(widget);
+        
+    getAjax(function(data){console.log(data);});
 };
+}
+
